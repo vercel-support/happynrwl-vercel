@@ -4,6 +4,7 @@ import { SharedComponents } from '@happynrwl/shared-components';
 
 const StyledPage = styled.div`
   .page {
+    background: #eee;
   }
 `;
 
