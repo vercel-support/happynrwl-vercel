@@ -17,6 +17,9 @@
   },
   "projects": {
     "ces": { "tags": [] },
-    "ces-e2e": { "tags": [], "implicitDependencies": ["ces"] }
+    "ces-e2e": { "tags": [], "implicitDependencies": ["ces"] },
+    "tuskdesk": { "tags": [] },
+    "tuskdesk-e2e": { "tags": [], "implicitDependencies": ["tuskdesk"] },
+    "shared-components": { "tags": [] }
   }
 }
