@@ -5,7 +5,9 @@
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
-    "build": "nx build",
+    "build": "func() { nx affected:apps --base=main --plain | grep -q \"$1\" && nx build \"$1\" --prod --outputPath=. ; }; func",
+    "affected:app": "node scripts/affected.js",
+    "whatever": "func() { print 1; }func;",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
